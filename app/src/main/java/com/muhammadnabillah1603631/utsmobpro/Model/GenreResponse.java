@@ -9,7 +9,6 @@ public class GenreResponse {
     private List<Genre> genres;
 
     public GenreResponse(List<Genre> genres) {
-
         this.genres = genres;
     }
 

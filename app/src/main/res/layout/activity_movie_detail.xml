@@ -39,13 +39,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/activity_margin"
-                    android:background="@color/cardview_dark_background"
+                    android:background="@color/cardview_light_background"
                     android:orientation="vertical"
                     android:padding="@dimen/card_view_inner_padding">
 
                     <TextView
                         android:id="@+id/text_view_title"
-                        style="@style/TextContent.Title.White"
+                        style="@style/TextContent.Title.Black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_margin"
@@ -56,6 +56,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Featured Crew" />
+
+                    <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/crew_job"
+                                style="@style/TextDetail.Field"
+                                android:text="Job" />
+
+                            <TextView
+                                android:id="@+id/crew_name"
+                                style="@style/TextDetail.Value"
+                                android:text="Name" />
+                        </TableRow>
+
+                    </TableLayout>
+
 
                 </LinearLayout>
 

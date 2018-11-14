@@ -26,7 +26,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MovieCardViewActivity extends AppCompatActivity {
     public static final String BASE_URL = "https://api.themoviedb.org/3/";
     public static final String BASE_URL_IMG = "https://image.tmdb.org/t/p/w500";
-    private static final String API_KEY = "8602657acd0ef3edffc054f34404bfa9";
+    public static final String API_KEY = "8602657acd0ef3edffc054f34404bfa9";
 
     RecyclerView recyclerViewMovies;
     MovieApi movieApi;
