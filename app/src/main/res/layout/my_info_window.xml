@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+
+    <ImageView
+        android:id="@+id/info_window_movie_poster"
+        android:layout_width="100dp"
+        android:layout_height="160dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_window_movie_title"
+            style="@style/TextContent.Title.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin">
+
+            <TableRow android:layout_marginBottom="@dimen/activity_margin">
+
+                <TextView
+                    android:layout_marginEnd="@dimen/activity_margin"
+                    android:text="12:45" />
+
+                <TextView
+                    android:layout_marginEnd="@dimen/activity_margin"
+                    android:text="14:55" />
+
+                <TextView android:text="17:05" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_marginEnd="@dimen/activity_margin"
+                    android:text="19:15" />
+
+                <TextView android:text="21:25" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

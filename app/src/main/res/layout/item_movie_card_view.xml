@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    style="@style/CardView.withMargin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_item_poster"
+                style="@style/MoviePoster"
+                android:layout_width="100dp"
+                android:layout_height="160dp"
+                tools:src="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_item_title"
+                    style="@style/TextContent.Title"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/textview_item_date"
+                    style="@style/TextContent.Small"
+                    tools:text="dd Month yyyy" />
+
+                <TextView
+                    android:id="@+id/textview_item_genre"
+                    style="@style/TextContent.Small.Gray"
+                    tools:text="Genre" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom">
+
+            <Button
+                android:id="@+id/button_more_info"
+                style="@style/ButtonGeneral"
+                android:layout_gravity="right"
+                android:text="More Info"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
