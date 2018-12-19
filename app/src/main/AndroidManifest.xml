@@ -20,7 +20,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.muhammadnabillah1603631.utsmobpro.Activity.MovieCardViewActivity"
+            android:name="com.muhammadnabillah1603631.utsmobpro.activity.MovieCardViewActivity"
             android:label="MyMovie">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,9 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.muhammadnabillah1603631.utsmobpro.Activity.MovieDetailActivity" />
-        <activity android:name="com.muhammadnabillah1603631.utsmobpro.Activity.TheaterSelectionActivity" />
-        <activity android:name="com.muhammadnabillah1603631.utsmobpro.Activity.MapsActivity" />
+        <activity android:name="com.muhammadnabillah1603631.utsmobpro.activity.MovieDetailActivity" />
+        <activity android:name="com.muhammadnabillah1603631.utsmobpro.activity.TheaterSelectionActivity" />
+        <activity android:name="com.muhammadnabillah1603631.utsmobpro.activity.MapsActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

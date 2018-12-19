@@ -1,4 +1,4 @@
-package com.muhammadnabillah1603631.utsmobpro.Adapter;
+package com.muhammadnabillah1603631.utsmobpro.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,10 +12,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.muhammadnabillah1603631.utsmobpro.Activity.MapsActivity;
-import com.muhammadnabillah1603631.utsmobpro.Adapter.MyGlide.GlideApp;
-import com.muhammadnabillah1603631.utsmobpro.Model.Movie;
-import com.muhammadnabillah1603631.utsmobpro.Model.Theater;
+import com.muhammadnabillah1603631.utsmobpro.activity.MapsActivity;
+import com.muhammadnabillah1603631.utsmobpro.adapter.MyGlide.GlideApp;
+import com.muhammadnabillah1603631.utsmobpro.model.Movie;
+import com.muhammadnabillah1603631.utsmobpro.model.Theater;
 import com.muhammadnabillah1603631.utsmobpro.R;
 
 import java.util.List;

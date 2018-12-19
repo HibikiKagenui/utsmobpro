@@ -1,8 +1,8 @@
-package com.muhammadnabillah1603631.utsmobpro.Controller;
+package com.muhammadnabillah1603631.utsmobpro.controller;
 
-import com.muhammadnabillah1603631.utsmobpro.Model.CreditResponse;
-import com.muhammadnabillah1603631.utsmobpro.Model.GenreResponse;
-import com.muhammadnabillah1603631.utsmobpro.Model.MovieResponse;
+import com.muhammadnabillah1603631.utsmobpro.model.CreditResponse;
+import com.muhammadnabillah1603631.utsmobpro.model.GenreResponse;
+import com.muhammadnabillah1603631.utsmobpro.model.MovieResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,4 +1,4 @@
-package com.muhammadnabillah1603631.utsmobpro.Activity;
+package com.muhammadnabillah1603631.utsmobpro.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +9,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.muhammadnabillah1603631.utsmobpro.Model.Movie;
-import com.muhammadnabillah1603631.utsmobpro.Model.Theater;
+import com.muhammadnabillah1603631.utsmobpro.model.Movie;
+import com.muhammadnabillah1603631.utsmobpro.model.Theater;
 import com.muhammadnabillah1603631.utsmobpro.R;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {

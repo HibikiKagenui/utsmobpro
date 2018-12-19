@@ -1,4 +1,4 @@
-package com.muhammadnabillah1603631.utsmobpro.Activity;
+package com.muhammadnabillah1603631.utsmobpro.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,12 +7,13 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import com.google.gson.GsonBuilder;
-import com.muhammadnabillah1603631.utsmobpro.Adapter.MovieCardViewAdapter;
-import com.muhammadnabillah1603631.utsmobpro.Controller.MovieApi;
-import com.muhammadnabillah1603631.utsmobpro.Model.Genre;
-import com.muhammadnabillah1603631.utsmobpro.Model.GenreResponse;
-import com.muhammadnabillah1603631.utsmobpro.Model.Movie;
-import com.muhammadnabillah1603631.utsmobpro.Model.MovieResponse;
+import com.muhammadnabillah1603631.utsmobpro.adapter.MovieCardViewAdapter;
+import com.muhammadnabillah1603631.utsmobpro.controller.MovieApi;
+import com.muhammadnabillah1603631.utsmobpro.global.GlobalVariables;
+import com.muhammadnabillah1603631.utsmobpro.model.Genre;
+import com.muhammadnabillah1603631.utsmobpro.model.GenreResponse;
+import com.muhammadnabillah1603631.utsmobpro.model.Movie;
+import com.muhammadnabillah1603631.utsmobpro.model.MovieResponse;
 import com.muhammadnabillah1603631.utsmobpro.R;
 
 import java.util.List;
@@ -24,10 +25,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MovieCardViewActivity extends AppCompatActivity {
-    public static final String BASE_URL = "https://api.themoviedb.org/3/";
-    public static final String BASE_URL_IMG = "https://image.tmdb.org/t/p/w500";
-    public static final String API_KEY = "8602657acd0ef3edffc054f34404bfa9";
-
     RecyclerView recyclerViewMovies;
     MovieApi movieApi;
 
@@ -43,7 +40,7 @@ public class MovieCardViewActivity extends AppCompatActivity {
 
     private void startApi() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(GlobalVariables.BASE_URL)
                 .addConverterFactory(GsonConverterFactory
                         .create(new GsonBuilder()
                                 .setLenient()
@@ -56,7 +53,7 @@ public class MovieCardViewActivity extends AppCompatActivity {
     }
 
     private void getGenres() {
-        Call<GenreResponse> genreResponseCall = movieApi.getGenres(API_KEY);
+        Call<GenreResponse> genreResponseCall = movieApi.getGenres(GlobalVariables.API_KEY);
         genreResponseCall.enqueue(new Callback<GenreResponse>() {
             @Override
             public void onResponse(Call<GenreResponse> call, Response<GenreResponse> response) {
@@ -77,7 +74,7 @@ public class MovieCardViewActivity extends AppCompatActivity {
     }
 
     private void getMovies(final GenreResponse genreResponse) {
-        Call<MovieResponse> movieResponseCall = movieApi.getNowPlayingMovies(API_KEY);
+        Call<MovieResponse> movieResponseCall = movieApi.getNowPlayingMovies(GlobalVariables.API_KEY);
         movieResponseCall.enqueue(new Callback<MovieResponse>() {
             @Override
             public void onResponse(Call<MovieResponse> call, Response<MovieResponse> response) {

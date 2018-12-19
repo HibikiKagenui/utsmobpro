@@ -1,4 +1,4 @@
-package com.muhammadnabillah1603631.utsmobpro.Adapter;
+package com.muhammadnabillah1603631.utsmobpro.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,11 +12,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.muhammadnabillah1603631.utsmobpro.Activity.MovieCardViewActivity;
-import com.muhammadnabillah1603631.utsmobpro.Activity.MovieDetailActivity;
-import com.muhammadnabillah1603631.utsmobpro.Adapter.MyGlide.GlideApp;
-import com.muhammadnabillah1603631.utsmobpro.Model.Genre;
-import com.muhammadnabillah1603631.utsmobpro.Model.Movie;
+import com.muhammadnabillah1603631.utsmobpro.activity.MovieCardViewActivity;
+import com.muhammadnabillah1603631.utsmobpro.activity.MovieDetailActivity;
+import com.muhammadnabillah1603631.utsmobpro.adapter.MyGlide.GlideApp;
+import com.muhammadnabillah1603631.utsmobpro.global.GlobalVariables;
+import com.muhammadnabillah1603631.utsmobpro.model.Genre;
+import com.muhammadnabillah1603631.utsmobpro.model.Movie;
 import com.muhammadnabillah1603631.utsmobpro.R;
 
 import java.text.DateFormat;
@@ -63,7 +64,7 @@ public class MovieCardViewAdapter extends RecyclerView.Adapter<MovieCardViewAdap
 
         // set poster
         GlideApp.with(context)
-                .load(MovieCardViewActivity.BASE_URL_IMG + m.getPosterPath())
+                .load(GlobalVariables.BASE_URL_IMG + m.getPosterPath())
                 .centerCrop()
                 .override(100, 160)
                 .transition(new DrawableTransitionOptions().crossFade())

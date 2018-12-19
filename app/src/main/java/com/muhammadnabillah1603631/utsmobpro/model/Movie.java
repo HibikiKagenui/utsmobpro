@@ -1,4 +1,4 @@
-package com.muhammadnabillah1603631.utsmobpro.Model;
+package com.muhammadnabillah1603631.utsmobpro.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

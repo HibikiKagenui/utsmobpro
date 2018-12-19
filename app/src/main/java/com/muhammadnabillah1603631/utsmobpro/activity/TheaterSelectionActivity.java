@@ -1,13 +1,13 @@
-package com.muhammadnabillah1603631.utsmobpro.Activity;
+package com.muhammadnabillah1603631.utsmobpro.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.muhammadnabillah1603631.utsmobpro.Adapter.TheaterSelectionAdapter;
-import com.muhammadnabillah1603631.utsmobpro.Model.Movie;
-import com.muhammadnabillah1603631.utsmobpro.Model.TheaterData;
+import com.muhammadnabillah1603631.utsmobpro.adapter.TheaterSelectionAdapter;
+import com.muhammadnabillah1603631.utsmobpro.model.Movie;
+import com.muhammadnabillah1603631.utsmobpro.model.TheaterData;
 import com.muhammadnabillah1603631.utsmobpro.R;
 
 public class TheaterSelectionActivity extends AppCompatActivity {
